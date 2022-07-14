@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* GLOBALS STYLES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+
+    /* colors */
+    --blue-color: #72BBFF;
+    --black-color: #202020;
+    --gray-color: #696969;
+    --white-color: #FFFFFF;
+    --dry-blue: #A8C5FF;
+
+    /* font sizes */
+    --fs-lg: clamp(2.5rem, 6vw + 0.5rem, 4rem);
+    --fs-md: clamp(1.5rem, 6vw + 0.5rem, 2.7rem);
+    --fs-sm: clamp(1.0rem, 6vw + 0.5rem, 1.2rem);
+
+    /* font weights */
+
+    --fw-bold: 700;
+    --fw-med: 600;
+    --fw-regular: 300;
+
+
+
+    /* btns width and hight */
+    --btn-container-w: clamp(6.5rem, 12vw + 1rem, 10rem);
+    --btn-container-h: clamp(2.5rem, 12vw + 1rem, 4rem);
+}
+
+
+
+
+/* NAVBAR STYLES */
+
+
+.nav-link {
+    color: #696969;
+    font-weight: var(--fw-med)
+}
+
+
+
+/* ---------------------------------------------------------------- */
+
+
+
+/* MAIN CONTENT (THE BANNER SECTION) STYLES */
+
+
+.main-text {
+    font-size: var(--fs-lg)
+}
+
+.main-text span {
+    display: block;
+    font-size: var(--fs-lg);
+}
+
+.contact-btn {
+    width: var(--btn-container-w);
+    height: var(--btn-container-h);
+    border: none;
+    border-radius: 11px;
+    background: var(--blue-color);
+    color: #fff;
+    font-weight: var(--fw-med);
+}
+
+.cv-button {
+    width: var(--btn-container-w);
+    height: var(--btn-container-h);
+    border: none;
+    border-radius: 11px;
+    background: none;
+    color: var(--gray-color)
+}
+
+
+/* ---------------------------------------------------------------- */
+
+
+
+/* Second Section | Section B | About Me */
+
+h1 {
+    font-size: var(--fs-md);
+    color: var(--white-color);
+}
+
+.aboutme-p {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-regular);
+    color: var(--white-color);
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 450px;
+    z-index: 1;
+    margin: 0 auto;
+    position: relative;
+}
+
+.box::after {
+    width: 100%;
+    height: 83%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    background-color: var(--white-color);
+    z-index: -1;
+    border-radius: 11px;
+  }
+
+
+.circle{
+    z-index: 1;
+    margin: 0 auto;
+    background-color: #ff7272;
+    height: 150px;
+    width: 150px;
+    background-color: var(--dry-blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.frontend-img{
+    width: 200px;
+    height: 200px;
+}
+
+.backend-img{
+    width: 200px;
+    height: 200px;
+}
+
+.ui-img{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 480px){
+   
+    .contact-btn, .cv-button {
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    
+}
