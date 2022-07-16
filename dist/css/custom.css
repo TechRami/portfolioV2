@@ -9,9 +9,16 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.w-80 {
+    width: 80%;
+}
+
+
+
 :root {
 
     /* colors */
+    --blue-primary: #4B87FF;
     --blue-color: #72BBFF;
     --black-color: #202020;
     --gray-color: #696969;
@@ -20,13 +27,15 @@
 
     /* font sizes */
     --fs-lg: clamp(2.5rem, 6vw + 0.5rem, 4rem);
-    --fs-md: clamp(1.5rem, 6vw + 0.5rem, 2.7rem);
+    --fs-semi-lg: clamp(1.0rem, 4vw + 0.5rem, 2.7rem);
+    --fs-md: clamp(1.0rem, 2vw + 0.5rem, 1.7rem);
     --fs-sm: clamp(1.0rem, 6vw + 0.5rem, 1.2rem);
 
     /* font weights */
 
     --fw-bold: 700;
-    --fw-med: 600;
+    --fw-md: 600;
+    --fw-semi-md: 500;
     --fw-regular: 300;
 
 
@@ -44,7 +53,8 @@
 
 .nav-link {
     color: #696969;
-    font-weight: var(--fw-med)
+    font-weight: var(--fw-md);
+    padding: 0;
 }
 
 
@@ -72,7 +82,7 @@
     border-radius: 11px;
     background: var(--blue-color);
     color: #fff;
-    font-weight: var(--fw-med);
+    font-weight: var(--fw-md);
 }
 
 .cv-button {
@@ -82,6 +92,10 @@
     border-radius: 11px;
     background: none;
     color: var(--gray-color)
+}
+
+.dev-img {
+    
 }
 
 
@@ -96,8 +110,19 @@ h1 {
     color: var(--white-color);
 }
 
+h2 {
+    font-size: var(--fs-semi-lg);
+    color: var(--white-color);
+}
+
+h4 {
+    color: var(--blue-primary);
+    font-weight: var(--fw-semi-md);
+    margin-top: 30px;
+}
+
 .aboutme-p {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-md);
     font-weight: var(--fw-regular);
     color: var(--white-color);
 }
@@ -106,11 +131,11 @@ h1 {
 .box {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 300px;
-    height: 450px;
+    /* justify-content: space-between; */
+    width: 330px;
+    height: 470px;
     z-index: 1;
-    margin: 0 auto;
+    margin: 40px 40px;
     position: relative;
 }
 
@@ -122,10 +147,15 @@ h1 {
     bottom: 0;
     content: "";
     display: block;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     background-color: var(--white-color);
     z-index: -1;
     border-radius: 11px;
   }
+
+.middle-box {
+    margin-top: 100px;
+}
 
 
 .circle{
@@ -166,9 +196,36 @@ h1 {
 
 
 
-
 /* MEDIA QUERIES */
 
+@media only screen and (max-width: 480px){
+   
+   
+    
+    
+}
+@media only screen and (max-width: 1537px){
+    
+   
+
+    .middle-box {
+        margin: 40px 40px;
+    }
+   
+    
+}
+@media only screen and (max-width: 1229px){
+   
+    .w-80 {
+        width: 90%;
+    }
+
+    .middle-box {
+        margin: 40px 40px;
+    }
+   
+    
+}
 @media only screen and (max-width: 480px){
    
     .contact-btn, .cv-button {
