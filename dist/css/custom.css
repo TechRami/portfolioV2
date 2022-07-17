@@ -78,6 +78,7 @@
     font-size: var(--fs-lg);
 }
 
+
 .contact-btn {
     width: var(--btn-container-w);
     height: var(--btn-container-h);
@@ -326,6 +327,10 @@ h4 {
     #section-d .row .d-flex{
         flex-direction: column;
     }
+
+    #section-d .row .d-flex .left-icon{
+        margin-bottom: 20px;
+    } 
 
 }
 @media only screen and (max-width: 480px){
