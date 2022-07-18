@@ -86,6 +86,18 @@ html {
     color: var(--gray-color);
     font-weight: var(--fw-md);
     padding: 0;
+    transition: all 0.4s ease;
+}
+
+.nav-link:hover {
+    color: var(--blue-color);
+    transform: scale(1.1);
+}
+
+.nav-announ svg{
+    transform: rotate(-10deg);
+    margin-left: 5px;
+    fill: var(--blue-color);
 }
 
 .nav-item{
@@ -95,7 +107,7 @@ html {
 .nav-item:after {
 	content: '';
 	display:block;
-	border-bottom: solid 3px #ff8282;  
+	border-bottom: solid 3px var(--blue-color);  
 	transform: scaleX(0);  
 	transition: transform 250ms ease-in-out;
   }
@@ -145,7 +157,8 @@ html {
 
 
 .main-text {
-    font-size: var(--fs-lg)
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
 }
 
 .main-text span {
@@ -153,6 +166,29 @@ html {
     font-size: var(--fs-lg);
 }
 
+.main-p{
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semi-md)
+}
+
+
+.main-bottom p{
+    color: var(--gray-color);
+}
+
+.polygon-container svg{
+    fill: var(--white-color);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.polygon-container svg:hover {
+    fill: var(--blue-color);
+}
+
+.polygon-container svg:hover #Vector{
+    fill: var(--white-color);
+}
 
 .contact-btn {
     width: var(--btn-container-w);
@@ -162,6 +198,11 @@ html {
     background: var(--blue-color);
     color: #fff;
     font-weight: var(--fw-md);
+    transition: transform .4s ease;
+}
+
+.contact-btn:hover {
+    transform: scale(0.9);
 }
 
 .cv-button {
@@ -170,7 +211,13 @@ html {
     border: none;
     border-radius: 11px;
     background: none;
-    color: var(--gray-color)
+    color: var(--gray-color);
+    transition: all .4s ease;
+}
+
+.cv-button:hover {
+    color: var(--blue-color);
+    transform: scale(1.1);
 }
 
 
@@ -297,6 +344,7 @@ h4 {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    cursor: grab;
   }
 
   .swiper-slide img {
