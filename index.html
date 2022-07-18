@@ -14,7 +14,7 @@
 <body>
   <header style="padding: 40px 0;">
     <nav class="navbar navbar-expand-md fixed-top">
-        <div style="width: 80%;" class="container-fluid p-0">
+        <div class="container-fluid p-0 w-80">
           <a class="navbar-brand">
             <svg fill="#526DE9" class="logo" width="44" height="50" viewBox="0 0 44 50" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -47,7 +47,7 @@
 
 <div style="padding: 40px 0 120px 0;" class="container-fluid w-80">
   <div class="row">
-    <div  class="col-sm-12 col-md-6 order-1 align-self-center">
+    <div  class="col-sm-12 col-md-12 col-lg-6 order-1 align-self-center">
       <p class="main-text">Hi,
         <span>I am <a style="color: var(--blue-color);">Rami Yassin</a></span>
       </p>
@@ -55,7 +55,7 @@
       <button class="contact-btn">Contact Me</button>
       <button class="cv-button">Download CV</button>
     </div>
-    <div class="col-sm-12 col-md-6 align-self-center order-md-1 text-center">
+    <div class="col-sm-12 col-md-12 col-lg-6 align-self-center order-lg-1 text-center">
       <svg class="dev-img" viewBox="0 0 867 651" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="dev-vector" clip-path="url(#clip0_7_2966)">
         <path id="Vector" d="M648.811 479.434L208.537 466.804C198.638 466.529 189.179 462.65 181.931 455.893C174.684 449.137 170.146 439.967 169.167 430.101L147.915 219.882C147.349 214.255 147.957 208.572 149.7 203.192C151.443 197.812 154.282 192.854 158.039 188.63C161.796 184.407 166.388 181.011 171.525 178.657C176.661 176.303 182.23 175.043 187.878 174.956L677.937 168.175C683.764 168.096 689.541 169.268 694.879 171.611C700.216 173.954 704.991 177.414 708.881 181.758C712.772 186.103 715.688 191.231 717.433 196.798C719.179 202.365 719.713 208.242 719.001 214.033L690.467 443.663C689.196 453.738 684.227 462.979 676.528 469.59C668.83 476.201 658.95 479.71 648.811 479.434V479.434Z" fill="#526DE9"/>
@@ -333,7 +333,7 @@
 <section id="section-d" style="padding-top: 100px" class="wrapper container-fluid">
   
 <div class="row">
-  <div class="col-sm-12 col-md-6 order-1">
+  <div class="col-sm-12 col-md-12 col-lg-6 order-1">
     <h1>
       Lets Have a <span style="display: block">Chat Together!</span>
     </h1>
@@ -362,8 +362,8 @@
       </div>
     </div>
   </div>
-  <div style="display: grid; place-items: center" class="col-sm-12 col-md-6 order-md-1">
-    <img width="100%" src="dist/images/3dGmail.png" alt="3dGmail.png">
+  <div style="display: grid; place-items: center" class="col-sm-12 col-md-12 col-lg-6 order-lg-1">
+    <img width="100%" style="max-width: 1000px;" src="dist/images/3dGmail.png" alt="3dGmail.png">
   </div>
 </div>
 <p style="padding: 0; margin: 0; color: var(--white-color)" class="text-center">made with 
@@ -384,24 +384,14 @@
      spaceBetween: 30,
      pagination: {
        el: ".swiper-pagination",
-       clickable: true,
+       clickable: false,
      },
      breakpoints: {
         0: {
             slidesPerView: 1,
             spaceBetween: 50,
-            
             },
-            320: {
-            slidesPerView: 1,
-            spaceBetween: 50,
-           
-            },
-            480: {
-            slidesPerView: 1,
-            spaceBetween: 50
-            },
-            640: {
+            876: {
             slidesPerView: 2,
             spaceBetween: 20,
             },
@@ -414,5 +404,6 @@
  </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+  <script src="dist/js/script.js"></script>
+  </body>
 </html>
