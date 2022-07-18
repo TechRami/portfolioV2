@@ -2,11 +2,25 @@
 
 /* GLOBALS STYLES */
 
+*::-webkit-scrollbar {
+    width: 11px;
+	background: #fff;
+  }
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(196, 196, 196);
+    border-radius: 10px;
+  }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 .w-80 {
@@ -62,6 +76,7 @@
 .bgc-dark {
     background: var(--white-color);
 }
+
 
 .nav-link {
     color: var(--gray-color);
@@ -154,9 +169,6 @@
     color: var(--gray-color)
 }
 
-.dev-img {
-    width: var(--img-lg)
-}
 
 
 /* ---------------------------------------------------------------- */
@@ -342,26 +354,32 @@ h4 {
 
 
 
-
-
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 480px){
-   
-   
-    
-    
-}
-@media only screen and (max-width: 1537px){
-    
-   
 
+/* Min width */
+@media only screen and (min-width: 991px){
+
+    .nav-m {
+        margin-left: 50px;
+    }
+
+    .right-col {
+       justify-content: flex-end;
+       align-items: flex-end;
+       align-content: flex-end;
+       align-self: flex-end;
+    }
+}
+
+
+/* Max width */
+@media only screen and (max-width: 1537px){
     .middle-box {
         margin: 40px 40px;
     }
-   
-    
 }
+
 @media only screen and (max-width: 1229px){
    
     .w-80 {
@@ -374,13 +392,16 @@ h4 {
    
     
 }
-@media only screen and (max-width: 767px){
-   
+
+@media only screen and (max-width: 991px){
+
     .nav-item {
         margin-top: 10px;
     }
+}
 
-
+@media only screen and (max-width: 767px){
+   
     .dev-img {
         width: var(--img-lg);
     }
@@ -394,6 +415,7 @@ h4 {
     } 
 
 }
+
 @media only screen and (max-width: 480px){
    
     .contact-btn, .cv-button {
