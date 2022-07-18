@@ -23,8 +23,12 @@ html {
 	scroll-behavior: smooth;
 }
 
+.w-90 {
+    max-width: 1800px;
+}
+
 .w-80 {
-    width: 80%;
+    max-width: 1600px;
 }
 
 
@@ -326,7 +330,7 @@ h4 {
 }
 
 #section-d .row {
-    padding: 0 20px 250px 20px;
+    padding: 0 20px 200px 20px;
 }
 
 
